@@ -1,3 +1,3 @@
-# om-tasks
+# tasks
 
 steal everything in here

@@ -7,7 +7,7 @@ image_resource:
     repository: bash
 
 inputs:
-  - name: om-tasks
+  - name: tasks
   - name: pivnet-product
   - name: om
 
@@ -19,4 +19,4 @@ params:
   OM_REQUEST_TIMEOUT: 3200
 
 run:
-  path: om-tasks/stage-product/task.sh
+  path: tasks/stage-product/task.sh
