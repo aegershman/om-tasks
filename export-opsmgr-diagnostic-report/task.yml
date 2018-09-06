@@ -7,7 +7,7 @@ image_resource:
     repository: bash
 
 inputs:
-  - name: pcf-pipelines
+  - name: om-tasks
   - name: om
 
 outputs:
@@ -22,4 +22,4 @@ params:
   OM_OUTPUT_FILE: "exported-diagnostic-report"
 
 run:
-  path: pcf-pipelines/tasks/export-opsmgr-diagnostic-report/task.sh
+  path: om-tasks/export-opsmgr-diagnostic-report/task.sh

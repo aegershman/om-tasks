@@ -7,7 +7,7 @@ image_resource:
     repository: bash
 
 inputs:
-  - name: pcf-pipelines
+  - name: om-tasks
   - name: pivnet-product
   - name: om
 
@@ -19,4 +19,4 @@ params:
   OM_REQUEST_TIMEOUT: 3200
 
 run:
-  path: pcf-pipelines/tasks/selective-deploy/task.sh
+  path: om-tasks/selective-deploy/task.sh

@@ -8,7 +8,7 @@ image_resource:
 
 inputs:
   - name: pivnet-product
-  - name: pcf-pipelines
+  - name: om-tasks
   - name: om
 
 params:
@@ -19,4 +19,4 @@ params:
   OM_REQUEST_TIMEOUT: 3200
 
 run:
-  path: pcf-pipelines/tasks/upload-product/task.sh
+  path: om-tasks/upload-product/task.sh
