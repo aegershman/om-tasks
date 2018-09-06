@@ -1,0 +1,22 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: bash
+
+inputs:
+  - name: stemcell
+  - name: tasks
+  - name: om
+
+params:
+  OM_TARGET: ~
+  OM_CLIENT_ID: ~
+  OM_CLIENT_SECRET: ~
+  OM_CONNECT_TIMEOUT: 1800
+  OM_REQUEST_TIMEOUT: 3200
+
+run:
+  path: tasks/upload-stemcell/task.sh
